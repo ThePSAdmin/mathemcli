@@ -20,7 +20,8 @@ builds:
       - -X github.com/thepsadmin/mathemcli/cmd.CommitSHA={{.ShortCommit}}
 
 archives:
-  - format: tar.gz
+  - formats:
+      - tar.gz
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_
@@ -28,7 +29,8 @@ archives:
       {{- .Arch }}
     format_overrides:
       - goos: windows
-        format: zip
+        formats:
+          - zip
 
 checksum:
   name_template: 'checksums.txt'
@@ -41,7 +43,7 @@ changelog:
       - '^test:'
       - '^chore:'
 
-brews:
+homebrew_casks:
   - repository:
       owner: thepsadmin
       name: homebrew-tap

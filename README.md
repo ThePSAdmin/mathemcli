@@ -4,11 +4,20 @@ CLI for searching products and managing your shopping cart on [Mathem.se](https:
 
 ## Installation
 
+### Homebrew (macOS/Linux)
+
+```bash
+brew tap thepsadmin/tap
+brew install mathemcli
+```
+
+### Go Install
+
 ```bash
 go install github.com/thepsadmin/mathemcli@latest
 ```
 
-Or build from source:
+### Build from source
 
 ```bash
 git clone https://github.com/thepsadmin/mathemcli.git

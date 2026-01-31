@@ -47,6 +47,7 @@ homebrew_casks:
   - repository:
       owner: thepsadmin
       name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     directory: Formula
     homepage: "https://github.com/thepsadmin/mathemcli"
     description: "CLI for Mathem.se grocery shopping"

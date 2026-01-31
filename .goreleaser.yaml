@@ -43,7 +43,7 @@ changelog:
       - '^test:'
       - '^chore:'
 
-homebrew_casks:
+brews:
   - repository:
       owner: thepsadmin
       name: homebrew-tap
